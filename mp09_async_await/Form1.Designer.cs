@@ -28,36 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.lv_1 = new System.Windows.Forms.ListView();
+            this.lv_2 = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.inpt_1 = new System.Windows.Forms.TextBox();
+            this.inpt_2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.inpt_date = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // listView1
+            // lv_1
             // 
-            this.listView1.AccessibleName = "lv_1";
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(27, 26);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(285, 299);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lv_1.AccessibleName = "lv_1";
+            this.lv_1.HideSelection = false;
+            this.lv_1.Location = new System.Drawing.Point(27, 12);
+            this.lv_1.Name = "lv_1";
+            this.lv_1.Size = new System.Drawing.Size(285, 299);
+            this.lv_1.TabIndex = 0;
+            this.lv_1.UseCompatibleStateImageBehavior = false;
             // 
-            // listView2
+            // lv_2
             // 
-            this.listView2.AccessibleName = "lv_2";
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(489, 26);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(285, 299);
-            this.listView2.TabIndex = 1;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.lv_2.AccessibleName = "lv_2";
+            this.lv_2.HideSelection = false;
+            this.lv_2.Location = new System.Drawing.Point(489, 26);
+            this.lv_2.Name = "lv_2";
+            this.lv_2.Size = new System.Drawing.Size(285, 299);
+            this.lv_2.TabIndex = 1;
+            this.lv_2.UseCompatibleStateImageBehavior = false;
             // 
             // button1
             // 
@@ -79,29 +78,23 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
+            // inpt_1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.inpt_1.AccessibleName = "inpt_time_1";
+            this.inpt_1.Location = new System.Drawing.Point(109, 335);
+            this.inpt_1.Name = "inpt_1";
+            this.inpt_1.Size = new System.Drawing.Size(203, 20);
+            this.inpt_1.TabIndex = 5;
             // 
-            // textBox2
+            // inpt_2
             // 
-            this.textBox2.AccessibleName = "inpt_time_1";
-            this.textBox2.Location = new System.Drawing.Point(109, 335);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.AccessibleName = "input_time_2";
-            this.textBox3.Location = new System.Drawing.Point(489, 335);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(203, 20);
-            this.textBox3.TabIndex = 6;
+            this.inpt_2.AccessibleName = "input_time_2";
+            this.inpt_2.Location = new System.Drawing.Point(489, 335);
+            this.inpt_2.Name = "inpt_2";
+            this.inpt_2.Size = new System.Drawing.Size(203, 20);
+            this.inpt_2.TabIndex = 6;
             // 
             // button3
             // 
@@ -112,29 +105,30 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox4
+            // inpt_date
             // 
-            this.textBox4.AccessibleName = "inpt_date";
-            this.textBox4.Location = new System.Drawing.Point(339, 388);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(203, 20);
-            this.textBox4.TabIndex = 8;
+            this.inpt_date.AccessibleDescription = "inpt_date";
+            this.inpt_date.AccessibleName = "inpt_date";
+            this.inpt_date.Location = new System.Drawing.Point(339, 388);
+            this.inpt_date.Name = "inpt_date";
+            this.inpt_date.Size = new System.Drawing.Size(203, 20);
+            this.inpt_date.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.inpt_date);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.inpt_2);
+            this.Controls.Add(this.inpt_1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listView2);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lv_2);
+            this.Controls.Add(this.lv_1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -145,15 +139,14 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lv_1;
+        private System.Windows.Forms.ListView lv_2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox inpt_1;
+        private System.Windows.Forms.TextBox inpt_2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox inpt_date;
     }
 }
 

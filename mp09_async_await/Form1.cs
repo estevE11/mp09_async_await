@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace mp09_async_await
 {
@@ -24,7 +25,23 @@ namespace mp09_async_await
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
+            string[] fileArray = Directory.GetFiles(@"C:\");
+            foreach (string name in fileArray)
+            {
+               lv_1.Text += name + "\r\n";
+            }
+            button1.Enabled = true;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            inpt_2.Text = "Buenas";
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string date = DateTime.UtcNow.ToString("MM-dd-yyyy hh:mm:ss");
+            inpt_date.Text = date;
         }
     }
 }
