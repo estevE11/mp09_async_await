@@ -1,0 +1,10 @@
+E:\dev\c#\mp09_async_await\mp09_async_await\bin\Debug\mp09_async_await.exe.config
+E:\dev\c#\mp09_async_await\mp09_async_await\bin\Debug\mp09_async_await.exe
+E:\dev\c#\mp09_async_await\mp09_async_await\bin\Debug\mp09_async_await.pdb
+E:\dev\c#\mp09_async_await\mp09_async_await\obj\Debug\mp09_async_await.csprojAssemblyReference.cache
+E:\dev\c#\mp09_async_await\mp09_async_await\obj\Debug\mp09_async_await.Properties.Resources.resources
+E:\dev\c#\mp09_async_await\mp09_async_await\obj\Debug\mp09_async_await.csproj.GenerateResource.cache
+E:\dev\c#\mp09_async_await\mp09_async_await\obj\Debug\mp09_async_await.csproj.CoreCompileInputs.cache
+E:\dev\c#\mp09_async_await\mp09_async_await\obj\Debug\mp09_async_await.exe
+E:\dev\c#\mp09_async_await\mp09_async_await\obj\Debug\mp09_async_await.pdb
+E:\dev\c#\mp09_async_await\mp09_async_await\obj\Debug\mp09_async_await.Form1.resources
