@@ -28,35 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lv_1 = new System.Windows.Forms.ListView();
-            this.lv_2 = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.inpt_1 = new System.Windows.Forms.TextBox();
             this.inpt_2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.inpt_date = new System.Windows.Forms.TextBox();
+            this.txtBox_1 = new System.Windows.Forms.TextBox();
+            this.txtBox_2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // lv_1
-            // 
-            this.lv_1.AccessibleName = "lv_1";
-            this.lv_1.HideSelection = false;
-            this.lv_1.Location = new System.Drawing.Point(27, 12);
-            this.lv_1.Name = "lv_1";
-            this.lv_1.Size = new System.Drawing.Size(285, 299);
-            this.lv_1.TabIndex = 0;
-            this.lv_1.UseCompatibleStateImageBehavior = false;
-            // 
-            // lv_2
-            // 
-            this.lv_2.AccessibleName = "lv_2";
-            this.lv_2.HideSelection = false;
-            this.lv_2.Location = new System.Drawing.Point(489, 26);
-            this.lv_2.Name = "lv_2";
-            this.lv_2.Size = new System.Drawing.Size(285, 299);
-            this.lv_2.TabIndex = 1;
-            this.lv_2.UseCompatibleStateImageBehavior = false;
             // 
             // button1
             // 
@@ -65,18 +45,18 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
+            this.button1.Text = "ST";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.AccessibleName = "btn_2";
-            this.button2.Location = new System.Drawing.Point(699, 332);
+            this.button2.Location = new System.Drawing.Point(549, 332);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
+            this.button2.Text = "MT";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -91,7 +71,7 @@
             // inpt_2
             // 
             this.inpt_2.AccessibleName = "input_time_2";
-            this.inpt_2.Location = new System.Drawing.Point(489, 335);
+            this.inpt_2.Location = new System.Drawing.Point(339, 335);
             this.inpt_2.Name = "inpt_2";
             this.inpt_2.Size = new System.Drawing.Size(203, 20);
             this.inpt_2.TabIndex = 6;
@@ -99,11 +79,11 @@
             // button3
             // 
             this.button3.AccessibleName = "btn_date";
-            this.button3.Location = new System.Drawing.Point(258, 386);
+            this.button3.Location = new System.Drawing.Point(173, 373);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
+            this.button3.Text = "Date";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -111,26 +91,45 @@
             // 
             this.inpt_date.AccessibleDescription = "inpt_date";
             this.inpt_date.AccessibleName = "inpt_date";
-            this.inpt_date.Location = new System.Drawing.Point(339, 388);
+            this.inpt_date.Location = new System.Drawing.Point(254, 375);
             this.inpt_date.Name = "inpt_date";
             this.inpt_date.Size = new System.Drawing.Size(203, 20);
             this.inpt_date.TabIndex = 8;
+            // 
+            // txtBox_1
+            // 
+            this.txtBox_1.Location = new System.Drawing.Point(27, 26);
+            this.txtBox_1.Multiline = true;
+            this.txtBox_1.Name = "txtBox_1";
+            this.txtBox_1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtBox_1.Size = new System.Drawing.Size(285, 299);
+            this.txtBox_1.TabIndex = 9;
+            // 
+            // txtBox_2
+            // 
+            this.txtBox_2.Location = new System.Drawing.Point(339, 26);
+            this.txtBox_2.Multiline = true;
+            this.txtBox_2.Name = "txtBox_2";
+            this.txtBox_2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtBox_2.Size = new System.Drawing.Size(285, 299);
+            this.txtBox_2.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(657, 415);
+            this.Controls.Add(this.txtBox_2);
+            this.Controls.Add(this.txtBox_1);
             this.Controls.Add(this.inpt_date);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.inpt_2);
             this.Controls.Add(this.inpt_1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lv_2);
-            this.Controls.Add(this.lv_1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "[Roger Esteve] MP09 UF2 Processos i fils - Practica AsyncAwait";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,15 +137,14 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView lv_1;
-        private System.Windows.Forms.ListView lv_2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox inpt_1;
         private System.Windows.Forms.TextBox inpt_2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox inpt_date;
+        private System.Windows.Forms.TextBox txtBox_1;
+        private System.Windows.Forms.TextBox txtBox_2;
     }
 }
 
